@@ -1,0 +1,26 @@
+html{
+	background-color: #F0F3F5;
+}
+
+span{
+	margin-right: 7px;
+}
+
+#header{
+	border-radius: 15px;
+	background-color: #6FD08C;
+	width:800px;
+	margin:0 auto;
+}
+
+#header-title{
+	color: white;
+	text-align: center;
+	font: 30px Arial, sans-serif;
+	justify-content: center;
+}
+
+#practical-tile{
+	width: 15%;
+	margin:0 auto;
+}
