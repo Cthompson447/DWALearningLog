@@ -21,6 +21,16 @@ span{
 }
 
 #practical-tile{
-	width: 15%;
+	width: 12%;
 	margin:0 auto;
+}
+
+#list-header{
+	font: 20px Arial, sans-serif;
+	padding-left: 20px;
+}
+
+#list{
+	font: 15px Arial, sans-serif;
+	padding-left:80px;
 }
