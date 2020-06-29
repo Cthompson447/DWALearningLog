@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practical 1</title>
+</head>
+
+<body>
+<h2>Welcome to WorldBooks</h2>
+<img height="150" width="150" src="media/jQueryLogo.png" alt="Image of the logo for the jQuery JavaScript library">
+<br/>
+<hr/>
+<br/>
+
+<h3>Customer Information:</h3>
+
+<label for="customerName">Customer Name: </label>
+<input type="text" name="customerName" id="customerName">
+<br/>
+
+<label for="streetAddress">Street Address: </label>
+<input type="text" name="streetAddress" id="streetAddress">
+<br/>
+
+<label for="emailAddress">Email Address: </label>
+<input type="email" name="emailAddress" id="emailAddress">
+<br/>
+
+<label for="postCode">Post Code: </label>
+<input type="text" name="postCode" id="postCode">
+<br/>
+
+<p>Phone Number
+    <input type="text" name="phoneNumber" id="phoneNumber">
+</p>
+<br/>
+
+
+<table border="2px"
+       summary="This is a table displaying all items present in your shopping basket. This information includes book title, author, price and quantity.">
+    <thead><h4>Shopping Cart:</h4></thead>
+    <tr>
+        <th scope="col">Book Title</th>
+        <th scope="col">Author</th>
+        <th scope="col">Price</th>
+        <th scope="col">Quantity</th>
+    </tr>
+    <tr>
+        <td>The Genius of Photography</td>
+        <td>Gerry Badger</td>
+        <td>&pound25.00</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>A History of Modern Britain</td>
+        <td>Andrew Marr</td>
+        <td>&pound14.99</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Wye Valley (Collins New Naturalist Library)</td>
+        <td>George F Peterken</td>
+        <td>&pound21.99</td>
+        <td>2</td>
+    </tr>
+</table>
+
+<p><h4>Payment Method: </h4>
+<input type="radio" name="visa" id="visa">
+<label for="visa">Visa</label>
+<input type="radio" name="masterCard" id="masterCard">
+<label for="masterCard">Master Card</label>
+<input type="radio" name="switchDebit" id="switchDebit">
+<label for="switchDebit">Switch/Debit</label>
+<input type="radio" name="cheque" id="Cheque">
+<label for="cheque">Cheque</label>
+</p>
+
+<p><h4>I would like contact by:</h4></p>
+<input type="checkbox" name="email" id="email">
+<label for="email">Email</label>
+<input type="checkbox" name="mobile" id="mobile">
+<label for="mobile">Mobile</label>
+<input type="checkbox" name="post" id="post">
+<label for="post">Post</label>
+<input type="checkbox" name="visit" id="visit">
+<label for="visit">Visit</label>
+<br/>
+<br/>
+
+<label for="otherComments">Other Comments:</label><br/>
+<textarea name="otherComments" rows="4" cols="50" id="otherComments"></textarea>
+<br/>
+<br/>
+
+<button type="submit">Submit Form</button>
+<button>Reset Form</button>
+
+
+</body>
+</html>
