@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical 2 - Learning Log</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+<div id="header">
+    <h2 id="header-title">Practical 2 - Learning Log</h2>
+</div>
+
+<div>
+    <p id="list-header">Learning outcomes:</p>
+    <ul id="list">
+        <li>Task 0 of this practical involved updating both the learning log site and
+            <a id="inline-link" href="../practical_0/practical0.html">practical 0</a>
+            to make them accessible. I've added alt tags to all images, ids and labels to all checkboxes/radio buttons.
+            In addition to this, I've also updated the table with appropriate scope attributes and a summary.
+            I also re-ran the
+            <a id="inline-link" href="https://validator.w3.org/">w3 validator</a> against the site again and the result
+            was that the site still complied with standards.
+        </li>
+
+        <li>Once I had implemented the HTML page required in Task 1, I used
+            <a href="https://docs.google.com/drawings" id="inline-link">Google Draw</a> to draw up the DOM structure
+        of the page. See below:<br/><img src="media/DOMStructure.jpg" height="480" width="600"></li>
+
+        <li>Following this task 1 part 4 requires the link tag and it's contents to be explained. The section of
+        highlighted text is a link tag. Within this link tag there are 2 pieces of conditional inline javascript. The
+        first piece of js "onmouseover="document.photo.src=’IMAGE_1.jpg';" means that when the link is hovered over,
+        image source is IMAGE_1. The second piece of JS is similar except for when the link is not hovered over,
+        the image source is IMAGE_0. <br/><br/>
+
+        Within this link tag is an image tag, this contains several attributes; src, width, height, name and border.
+        src is the relative path to the image, width is the width of picture in pixels, height is height in pixels.
+        name is set to photo in this case which is then selected by document.photo.src , allowing the inline javascript
+        to modify the attribute src of the image tag called photo. The image also has a border of 0 pixels set.</li>
+
+        
+
+    </ul>
+
+</div>
+
+</body>
+</html>
