@@ -3,12 +3,18 @@
 
 <head>
     <title>Image swap</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body bgColor="white">
 <a href='#' onmouseover="document.photo.src='media/IMAGE_1.png';"
    onmouseout="document.photo.src='media/IMAGE_0.jpg';">
-    <img src="IMAGE_0.jpg" width="600" height="400" name="photo" border="0" alt="Image of a fantasy sunset"> </img>
+    <img src="media/IMAGE_0.jpg" width="600" height="400" name="photo" border="0" alt="Image of a fantasy sunset"> </img>
 </a>
+<br/>
+<h3 id="text">Mouseover Links to Change Background Colour</h3>
+<a class="inline-link" href="#" onmouseover="document.bgColor='#90EE90'">GREEN</a>
+<a class="inline-link" href="#" onmouseover="document.bgColor='cornFlowerBlue'">BLUE</a>
+<a class="inline-link" href="#" onmouseover="document.bgColor='#B22222'">RED</a>
 </body>
 </html>

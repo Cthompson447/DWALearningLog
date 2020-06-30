@@ -1,0 +1,14 @@
+#text {
+    font: 15px Arial, sans-serif;
+   padding-left: 10px;
+}
+
+.inline-link {
+    text-decoration: none;
+    font: 15px Arial, sans-serif;
+    border: 2px black;
+    background-color: white;
+    border-radius: 2px;
+    width: 100px;
+    height: 40px;
+}
