@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical 3 - Learning Log</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+<div id="header">
+    <h2 id="header-title">Practical 3 - Learning Log</h2>
+</div>
+
+<div>
+    <p id="list-header">Tasks: </p>
+    <ul id="list">
+        <li>Task 1:
+            <p>Task 1 requires description of some JavaScript statements</p>
+            <ol>
+                <li> var myAge =45; - creating a new variable "myAge" and setting its value to 45.</li>
+                <li> myAge += 4; - value of myAge + 4. Value of myAge = 49</li>
+                <li> myAge ++; - increase value of myAge by 1. Value of myAge = 50</li>
+                <li> myAge == 40+10; - comparison to check if myAge is equal to 50. Value of myAge=50 therefore this is
+                    true
+                </li>
+                <li> myAge <=38; - comparison to check if myAge is less than or equal to 38. Value of myAge=50 therefore
+                    this is false
+                </li>
+                <li> myAge =40; - assigning myAge to value of 40.</li>
+            </ol>
+        </li>
+        <br/>
+
+        <li><a id="inline-link" href="practical3.html">Task 2:</a>
+            <p>The value of myAge after the statement 'myAge = "My age is" + " " + myAge' is the concatenated string
+                value
+                of "My age is" + " " + the integer value of myAge. The value of this is "My age is 49".</p>
+            <ol>
+                <li> myAge ++; - after adding this "My age is 50" is displayed - as expected</li>
+                <li> myAge == 40+10; -after adding this "My age is 50" is still displayed - as expected. I added a line
+                    'console.log(myAge == 40+10);' to check the comparison and checked my dev console which displayed
+                    true
+                    - as expected.
+                </li>
+                <li> myAge <=38; - after adding this "My age is 50" is displayed - as expected. I did the same as above
+                    and added 'console.log(myAge <= 38);' which returned false in console - as expected
+                </li>
+                <li> myAge =40; - after adding this "My age is 40" is displayed - as expected.</li>
+            </ol>
+        </li>
+        <br/>
+
+        <li><a id="inline-link" href="practical3.html">Task 3:</a>
+            <p>The value of the variable myTextContainer is "A web browser will follow your instructions exactly and
+                without an argument." which is the result of concatenation in the js += statements</p>
+        </li>
+        <br/>
+
+        <li><a id="inline-link" href="practical3Task4.html">Task 4:</a>
+        <p>Task 4 involves finding and explaining 6 errors in the given in the practical document.</p>
+            <ol>
+                <li>The opening script tag wasn't closed before javascript code - it would mean the
+                javascript would be treated as tag attributes and would do nothing.</li>
+                <li>'var 1function="learning" ;' has 2 problems, you cannot start a variable with a number
+                and function is a reserved keyword and cannot be used for variable assignment.</li>
+                <li>'var course' is not referenced because of a spelling mistake in
+                'document.write("I am " + learning +" "+ corse + " for "+ year +" years,"+ type);' </li>
+                <li>bgcolour does not work because the style attribute uses the american spelling 'color'</li>
+                <li>'var type="full time"' and ' year +=2' don't have semicolons at end of line, not best practice</li>
+                <li>'text' is a deprecated attribute, 'color' should be used instead for text</li>
+                <li>'var course=imd/ict;' is incorrect - you cannot divide a string by a string. Assuming this
+                is imd or ict, this variable should be in quotes e.g. var course="imd/ict".</li>
+            </ol>
+        </li>
+        <br/>
+        <br/>
+
+        <li>Learning Outcomes:
+            <ol>
+                <li>I familiarised myself with Javascript operators in tasks 1, 2 and 3. I made sure I understood
+                all operators aswell as comparisons by using console.log(); so that I could test outputs in
+                chrome dev console.</li>
+                <li>In Task 4 I improved my troubleshooting skills through some trial and error with the provided
+                html script. From some previous experience in work - I was able to highlight 6 problems and
+                some improvements for the script. The links are as follows for the practicals
+                    <a id="inline-link" href="practical3.html">Tasks 1,2,3</a> and
+                    <a id="inline-link" href="practical3Task4.html">Task 4</a>.</li>
+            </ol>
+        </li>
+    </ul>
+
+
+
+</div>
+
+</body>
+</html>
