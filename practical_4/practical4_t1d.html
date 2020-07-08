@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="js/myJsLibPractical4P1d.js"></script>
+</head>
+<body onload="populateDropDown(universitiesNI, 'universitiesNI');
+              populateDropDown(universityOfUlsterCampus, 'universityOfUlsterCampus');
+              populateDropDown(courses, 'courses');">
+<label for="name">Please enter your name: </label>
+<input type="text" name="name" id="name">
+<br/><br/>
+
+<select name="universitiesNI" id="universitiesNI">
+    <option> Select a university</option>
+</select>
+<select name="universityOfUlsterCampus" id="universityOfUlsterCampus">
+    <option> Select a campus</option>
+</select>
+<select name="courses" id="courses">
+    <option> Select a course</option>
+</select>
+<br/>
+<br/>
+
+<button type="button" onclick="DisplayText(getTextBoxValueAndDisplayWelcome());">Display</button>
+
+</body>
+</html>
