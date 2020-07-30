@@ -31,11 +31,11 @@ html {
     padding-left: 80px;
 }
 
-#container {
+.container {
     height: 400px;
 }
 
-#container div {
+.container div {
     width: 12%;
     height: 60%;
     display: inline-block;
@@ -50,6 +50,6 @@ html {
     border-top: 4px black;
 }
 
-#inline-link {
+.inline-link {
     text-decoration: none;
 }
