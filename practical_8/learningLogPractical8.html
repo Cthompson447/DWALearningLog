@@ -14,7 +14,81 @@
 <div>
     <p class="list-header">Tasks & Learning Outcomes:</p>
     <ul class="list">
+        <li><a class="inline-link" href="practical8_T1.html">Task 1</a>
+        <ul>
+            <li>Task 1 Part 3</li>
+            <ul>
+                <li>
+                    This task involves describing what the phone validation portion of the provided script does: <br/>
+                </li>
+                <li><b>if (!document.userSurvey.phone.value)</b> - this mean if no value is present</li>
+                <li><b>window.alert("Phone number missing. Please enter a valid phone number to continue.");</b> -
+                alert fired in browser to notify user number is missing</li>
+                <li><b>document.userSurvey.phone.focus();</b> - focus the phone input element</li>
+                <li><b>return false;</b> - does what it says on the tin, return false value from validation script</li>
+                <li><b>else clause</b> - this means we have a phone number, continue with further validation</li>
+                <li><b>var numbersOnly = ""; var chars = ""; var phoneNo = document.userSurvey.phone.value;</b>
+                    - initialise 3 variables, 2 empty and one with value of what was entered into our phone input
+                    box</li>
+                <li><b>for (i = 0; i < phoneNo.length; i++)</b> - loop to iterate length of number</li>
+                <li><b>chars = phoneNo.substring(i,i+1);</b> - get next character in position of phone number
+                    string</li>
+                <li><b>if (chars >= "0" && chars <= "9") { numbersOnly = numbersOnly + chars; }</b> - if our character
+                    is greater than or equal to 0 and less than or equal to 9, we add it to our numbers only list.</li>
+                <li><b>if (numbersOnly.length != 13) { window.alert("Incorrect phone number format.You must enter 13
+                    numbers."); document.userSurvey.focus(); return false; }</b> - numbers have 13 characters, if not
+                equal to length of 13, alert of invalid input, focus input box and fail validation</li>
+                <li><b>else { var areacode = numbersOnly.substring(0,2); var leading0 = numbersOnly.substring(2,3);
+                    var exchange = numbersOnly.substring(3,5); var ext1 = numbersOnly.substring(5,9);
+                    var ext2 = numbersOnly.substring(9);</b> - declaration of substrings to specify number positions
+                </li>
+                <li><b>var newNumber =( "+" + areacode + " " +"(" + leading0 + ")" + exchange + " " + ext1 + "-" +
+                    ext2); document.userSurvey.phone.value = newNumber; return true; } </b> - formatting of phone
+                number using above substring values to dictate when to add symbols, once this has been done
+                validation returns true.</li>
+                <br/>
+                <br/>
+            </ul>
 
+            <li>Task 1 Part 5</li>
+            <ul>
+                <li>This task involves describing what the email validation of the provided script does: <br/></li>
+                <li><b>if (!document.userSurvey.eMail.value) { window.alert("E-mail Address missing. Please enter a
+                    valid E-mail address to continue."); document.userSurvey.eMail.focus(); return false; </b> -
+                If no email is present, alert the user, focus email input and return false to fail validation</li>
+                <li><b>var emailAddress = document.userSurvey.eMail.value; var atLoc = emailAddress.indexOf("@",1);
+                    var dotLoc = emailAddress.indexOf(".",atLoc+2); var len = emailAddress.length; </b> - Declare
+                4 variables, emailAddress is value of input box, atLoc specifies where to find @ e.g search from index
+                of 1 onwards for @ symbol. dotloc is 2 characters after @ symbol declaration and length is size of
+                our email string.</li>
+                <li><b> if (atLoc > 0 && dotLoc > 0 && len > dotLoc+2) { return true; }</b> - If we meet all of our
+                    rules as specified in our variables above, return true meaning validation successful. </li>
+                <li><b>else { alert("Invalid E-mail address! Please enter your email address again.");
+                    document.userSurvey.eMail.focus(); return false; } </b> - If we have an email address entered but
+                fail to meet our validation rules, we flag this as incorrect, alert user, focus email input and
+                return false to fail our validation. </li>
+            </ul>
+        </ul>
+    </ul>
+    <br/>
+    <br/>
+
+    <ul class="list">
+        <li>Learning Outcomes</li>
+        <ul>
+            <li>This practical has been the hardest one yet by far, it took me a while to think of how to populate
+            the dom structure without writing any HTML. For formatting of the form, I made use of HTML tables
+            to group up labels with input fields.</li>
+            <li>I found explaining the provided scripts very beneficial, in order to describe parts accurately I had
+            to go and research further to ensure I had a solid understanding of the code.</li>
+            <li>When adding the provided validation scripts, the first 3 worked fairly seamlessly with my code. However,
+            the script for checkboxes wasn't working correctly and required my to some diagnosing. I eventually
+            worked out this was to do with the locator to select my checkboxes through debugging with
+            <b>document.querySelector('#bookchoice0')</b> and other similar queries. Through tinkering with these
+            I was able to find the root cause of my bug and fix it.</li>
+            <li>I feel that this practical has been the most beneficial, adapting code that isn't mine required me
+            to have a strong understanding of what the other code did and also developed my troubleshooting skills.</li>
+        </ul>
     </ul>
 
 </div>
