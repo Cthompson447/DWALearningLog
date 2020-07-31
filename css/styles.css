@@ -21,12 +21,12 @@ html {
     width: 15%;
 }
 
-#list-header {
+.list-header {
     font: 20px Arial, sans-serif;
     padding-left: 20px;
 }
 
-#list {
+.list {
     font: 15px Arial, sans-serif;
     padding-left: 80px;
 }
