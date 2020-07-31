@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical 7 Task 2</title>
+    <script type="text/javascript" src="js/practical7_Task2and3.js"></script>
+</head>
+
+<body>
+
+<table>
+    <tr>
+        <td>
+            <label for="firstName">Please enter your first name: </label>
+        </td>
+        <td>
+            <input id="firstName" type="text">
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label for="surname">Please enter your surname: </label>
+        </td>
+        <td>
+            <input id="surname" type="text">
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label for="age">Please enter your age: </label>
+        </td>
+        <td>
+            <input id="age" type="number" min="17" value="17">
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label for="maritalStatus">Please select your marital status: </label>
+        </td>
+        <td>
+            <select name="maritalStatus" id="maritalStatus">
+                <option>Single</option>
+                <option>Married</option>
+            </select>
+        </td>
+    </tr>
+</table>
+
+<button id="calculate" onclick="if(validateInputs()){getClassification()}">Calculate Insurance Classification</button>
+
+</body>
+</html>
